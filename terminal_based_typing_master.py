@@ -16,9 +16,8 @@ while True:
     try:
         userChoice=int(input())
     except:
-        print("Please type the key")
-        userChoice=int(input())
-        print()
+        print("You have pressed the wrong key")
+        continue
     print()
 
     paragraph=random.choice(test)
@@ -39,21 +38,20 @@ while True:
 
     error=0
     cnt=1
-    curWords=0
+    corWords=0
     for i in range(len(type)):
         if cnt>len(paragraph):
             break
         if paragraph[i]!=type[i]:
             error+=1
         else:
-            curWords+=1
+            corWords+=1
         cnt+=1
         if userChoice*60==timeT:
             break
-    
-    accur=len(type)-error
+ 
     try:
-        accuracy=round((curWords/len(paragraph))*100)
+        accuracy=round((corWords/len(paragraph))*100)
     except:
         accuracy=0
 
@@ -78,4 +76,3 @@ while True:
     else:
         print("You have pressed the wrong key.")
         print()
-        break
