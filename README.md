@@ -1,2 +1,2 @@
-# terminal_based_typing_master
-This repo is for typing test.
+# terminal_based_Project
+This repo is for dsa project.
