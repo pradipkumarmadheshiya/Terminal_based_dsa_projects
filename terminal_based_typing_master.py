@@ -1,9 +1,9 @@
 import random
 from time import *
 
-test=[["My", "name", "is", "Pradip", "Kumar", "Madheshiya."],
-      ["I","am","a","Aspiring","Full","Stack","Web","Developer."],
-      ["This","Project","will","help","to", "measure","typing","speed."]]
+test=["My name is Pradip Kumar Madheshiya.",
+      "I am an Aspiring Full Stack Web Developer.",
+      "This Project will help us to measure Typing Speed."]
 
 while True:
 
@@ -21,9 +21,10 @@ while True:
     print()
 
     paragraph=random.choice(test)
+    paragraph=paragraph.split()
 
-    for i in range(len(paragraph)):
-        print(paragraph[i],end=" ")
+    for i in paragraph:
+        print(i,end=" ")
 
     print()
     print()
