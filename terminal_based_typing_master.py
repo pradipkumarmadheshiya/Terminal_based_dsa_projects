@@ -1,5 +1,8 @@
 import random
 from time import *
+import os
+
+os.system("cls")
 
 test=["My name is Pradip Kumar Madheshiya.",
       "I am an Aspiring Full Stack Web Developer.",
@@ -58,6 +61,8 @@ while True:
 
     print()
     print("Taken time: ",timeT,"seconds")
+    print("Total words typed:",len(type),"words")
+    print("Correct words typed:",corWords,"words")
     print("Errors:",error,"words")
     print("accuracy:",str(accuracy)+"%")
     mint=timeT/60

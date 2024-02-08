@@ -1,4 +1,8 @@
 import random
+import os
+
+os.system("cls")
+
 cChoice={1:"⛰️",2:"📃",3:"✂️"}
 i=1
 yourPoints,computerPoints=0,0
@@ -30,7 +34,7 @@ while True:
             print("Invalid key")
     print("Round",i,"start:")
     print()
-    print("Please select any one option-")
+    print("Please select any one option:-")
     print(str(1)+" for ⛰️",str(2)+" for 📃",str(3)+" for ✂️",sep="\n")
     print()
 
